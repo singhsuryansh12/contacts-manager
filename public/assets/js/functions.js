@@ -9,9 +9,9 @@ let count = 0;
 addButton.addEventListener('click', (e) => {
     e.preventDefault();
     database.ref('/users/' + count).set({
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
+        firstName: firstName.value,
+        lastName: lastName.value,
+        email: email.value,
     })
     count++;
 })
