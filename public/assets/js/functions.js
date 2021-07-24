@@ -1,9 +1,9 @@
 let firstName = document.getElementById('firstName');
 let lastName = document.getElementById('lastName');
 let email = document.getElementById('email');
-let addButton = document.getElementById('addButton');
+export let addButton = document.getElementById('addButton');
 
-const database = firebase.database();
+export const database = firebase.database();
 let count = 0;
 
 addButton.addEventListener('click', (e) => {
@@ -14,4 +14,7 @@ addButton.addEventListener('click', (e) => {
         email: email.value,
     })
     count++;
+    firstName.reset();
+    lastName.reset();
+    email.reset();
 })
