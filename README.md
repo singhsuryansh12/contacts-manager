@@ -1,7 +1,7 @@
 # Contacts Manager
 My submission for **Digital Product School** Software Engineering Challenge
 
-This web app is deployed using Firebase. You can use the app here: https://contacts-manager-efef9.web.app
+This web app is deployed using Firebase. You can use the app here: https://contacts-manager-efef9.web.app or https://contacts-manager-efef9.firebaseapp.com/
 
 **Tech Stack** used: HTML, CSS, JavaScript, Bootstrap, GitHub Actions, Firebase
 
