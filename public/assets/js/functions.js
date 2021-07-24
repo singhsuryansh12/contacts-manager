@@ -1,20 +1,18 @@
 let firstName = document.getElementById('firstName');
 let lastName = document.getElementById('lastName');
 let email = document.getElementById('email');
-export let addButton = document.getElementById('addButton');
+let addButton = document.getElementById('addButton');
 
-export const database = firebase.database();
-let count = 0;
+const database = firebase.database();
 
 addButton.addEventListener('click', (e) => {
     e.preventDefault();
-    database.ref('/users/' + count).set({
+    database.ref('/users/').push().set({
         firstName: firstName.value,
         lastName: lastName.value,
         email: email.value,
     })
-    count++;
-    firstName.reset();
-    lastName.reset();
-    email.reset();
+    firstName.value = "";
+    lastName.value = "";
+    email.value = "";
 })
